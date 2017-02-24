@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="fr">
+
+
+<!-- PARTIE HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Quel arrondissement est fait pour toi ?</title>
+
+<!-- Les balises META servent à placer des métadonnées (metadata) dans une page HTML. On placera ces informations -- dans l’élément head, et elles ne seront pas affichées sur la page. À qui sont destinées ces informations? Eh bien, à tous les outils susceptibles de les exploiter. Et notamment: aux navigateurs ; aux moteurs de recherche;plus largement, à tous les outils d’indexation, c’est-dire tous les outils qui analysent vos pages pour y identifier diverses informations. 
+https://www.alsacreations.com/article/lire/628-balises-meta.html -->
+
+	<!-- Permet d’avoir une information sur l’encodage des caractères utilisé (non indispensable mais recommandé) -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<!-- Cette META permet de fournir une description courte (deux à trois phrases courtes) de la page web. 
+	Cette description est notamment utilisée (dans certains cas) par les principaux moteurs de recherche, 
+	pour fournir le court texte d’aperçu des pages de résultats, ou bien par les réseaux sociaux (Facebook, Google+) 
+	pour définir le paragraphe de texte associé au lien partagé. -->
+	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
+
+	<!-- Relativement obsolète -->
+	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
+        
+
+<!-- 
+Le lien est un composant essentiel de la structure des documents. Il offre la possibilité de naviguer vers une autre ressources, et de mettre en relation des ressources similaires, complémentaires ou concurrentielles. L'attribut rel placé sur les balises <a>, <area> et <link> définit la nature de la relation établie entre deux ressources.
+La balise LINK permet de lier la feuille de style CSS au document HTML. Le navigateur sait ainsi qu'il s'agit des styles applicables au document et interprète les propriétés CSS contenues dans le fichier lié.
+-->
+
+        <link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.css">
+        <link rel="stylesheet" href="css/eUGsj.all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  
+        <!--[if lte IE 8]>
+		<script src="css/ie/html5shiv.js"></script><![endif]-->
+        
+	<!--[if lt IE 9]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="js/json2.min.js"></script>
+        	<script type="text/javascript">
+            window.__ltie9 = true; </script>
+        <![endif]-->
+        
+<!-- L'élément HTML <script> est utilisé pour intégrer ou faire référence à un script exécutable. 
+Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+        <script src="js/json2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/npm.js"></script>
+                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.15/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+        <script src="js/bar-chart-1a3f0242ee9d13cef39ccd24a306b422.min.js"></script>
+        <script src="js/chart-753c771b6f0ebc215cab76b0fca5e03aab20b743.min.js"></script>
+        <script src="js/default-5baee189e1a2f0bf680f4910cc958098.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+		<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-75276315-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	
+	</head>
+
+
+
+
+<!-- PARTIE BODY -->
+	<body class="landing">
+
+	<!-- En-tête : les boutons en haut à droite -->
+			<header id="header">
+				<h1><a href="#description">Description</a></h1>
+				<nav id="nav">                   
+					<ul >
+						<li><a href="index.html">Accueil</a></li>       
+						<li><a href="sources.html">Sources</a></li>
+						<li><a href="about.html">Méthodologie </a></li>
+                        
+					</ul>
+				</nav>
+			</header>
+
+	<!-- Banner : 1er affichage de la page -->
+			<section id="banner">
+				<h2>Quel arrondissement parisien est fait pour toi ?</h2>
+				<ul class="actions">
+					<li>
+						<a href="#quiz" class="button big">Faites le test</a>
+					</li>
+				</ul>
+			</section>
+
+	
+
+        <!-- QUIZ-->
+			<section id="quiz" class="wrapper style3 align-center">
+				<header> <h2>Dis nous qui tu es, nous te dirons où tu devrais vivre !</h2> </header>
+
+<!--
+<div class="jumbotron">
+<h2>Combien de fois faites-vous du sport par semaine :</h2>
+<br />
+<button type="button" class="jumbotron">
+<p><a href="#" class="btn btn-primary" role="button">Plus de 3</a> <a href="#" class="btn btn-primary" role="button">Une à deux</a> <a href="#" class="btn btn-primary" role="button">Jamais</a></p>
+</button>
+</div>
+-->
+
+
+<!-- Test -->
+
+<section id="q1" class="wrapper style3 align-center">
+<h2>Combien de fois par semaine mangez-vous au restaurant ?</h2>
+<ul class="actions"> <li>
+<button type="button" class="jumbotron">
+<p><a href="#q2" class="btn btn-primary" role="button">Plus de 2</a> <a href="#q3" class="btn btn-primary" role="button">Deux</a> <a href="#q3" class="btn btn-primary" role="button">Occasionnellement</a></p>
+</button>
+</li> </ul>
+</section>
+
+    <script>
+        var link = document.getElementById('q1');
+        var href = link.getAttribute('href'); // On récupère l'attribut « href »
+        alert(href);
+    </script>
+
+<section id="q2" class="wrapper style3 align-center">
+<h2>Combien de fois par semaine mangez-vous au fast-food ?</h2>
+<ul class="actions"> <li>
+<button type="button" class="jumbotron">
+<p><a href="#q3" class="btn btn-primary" role="button">Plus de 2</a> <a href="#q3" class="btn btn-primary" role="button">Deux</a> <a href="#q3" class="btn btn-primary" role="button">Occasionnellement</a></p>
+</button>
+</li> </ul>
+</section>
+
+<section id="q3" class="wrapper style3 align-center">
+<h2>Dans quel type de magasin faites-vous vos courses ?</h2>
+<ul class="actions"> <li>
+<button type="button" class="jumbotron">
+<p><a href="#" class="btn btn-primary" role="button">Plus de 2</a> <a href="#" class="btn btn-primary" role="button">Deux</a> <a href="#" class="btn btn-primary" role="button">Occasionnellement</a></p>
+</button>
+</li> </ul>
+</section>
+
+<!-- Fin test -->
+
+
+<!--
+<div class="question">
+<form name="quest" method="post" enctype="text/plain">			
+   <p>
+       Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+       <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+       <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+   </p>
+<input type="submit" value="Envoyer">
+<input type="reset" value="Effacer">
+</form>
+</div>
+-->
+
+
+
+			</section>
+
+
+	<!-- Description-->
+			<section id="description" class="wrapper style1 align-center">
+				<div class="container">
+					<!-- Faire différentes colonnes avec clic bouton -->
+					<div class="row 200%">						
+						<section class="4u 12u$(small)">
+							<a href="#compare" <i class="icon big rounded fa-bar-chart"></i></a>
+							<p>Comparer les arrondissements</p>
+						</section>
+
+						<section class="4u 12u$(small)">
+							<a href="#profil" <i class="icon big rounded fa-bar-chart"></i></a>
+							<p>Profil des arrondissements</p>
+						</section>
+
+						<section class="4u$ 12u$(small)">
+							<a href="#FunFacts" <i class="icon big rounded fa-smile-o"></i></a>
+							<p>Découvrez les fun facts de chaque arrondissement</p>
+						</section>
+					</div>
+				</div>
+			</section>
+
+
+
+
+	<!-- Comparaison des arrondissements -->
+	<!-- Profil des arrondissements -->	
+	<!-- Fun Facts des arrondissements -->
+
+
+	<!-- Mettre un retour en haut de la page -->
+	<a href="#" class="back-to-top" style="display: block;">Back to Top</a>
+
+	<!-- Pied de page -->
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+				<section class="5u 6u$(medium) 12u$(small)">
+                            		<ul class="tabular">
+						<h3>QUI SOMMES-NOUS ?</h3>
+                            				<h4>Etudiants en dernière année de l'ENSAE ParisTech, nous avons réalisé cette page web dans le cadre du cours de dataviz.</h4>                           
+                            			<h3><a href="sources.html">SOURCES</a></h3>  
+                            			<h3><a href="about.html">METHODOLOGIE</a></h3>  
+					</ul>
+				</section>
+				
+				<section class="5u$ 12u$(medium) 12u$(small)">
+					<h3>NOUS CONTACTER</h3>
+					<ul class="tabular">
+					<li> <h3>Mail</h3>
+							<h4><a href="mailto:ourteamvision@gmail.com">ourteamvision@gmail.com</a></h4> </li>
+                                	<li> <h3><a href="adresse perso linkedin" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="adresse perso linkedin">Nom Prénom</a></h4> </li>
+					<li><h3><a href="adresse perso gmail" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Nom2 Prénom2</a></h4> </li>
+					</ul>
+				</section>
+				</div>
+
+				<ul class="copyright">
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                        		<li>Icons:  <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> </li>
+                     		</ul>
+			</div>
+			</footer>
+
+	</body>
+</html>

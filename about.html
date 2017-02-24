@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="fr">
+
+
+<!-- PARTIE HEAD -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Quel arrondissement est fait pour toi ?</title>
+		
+<!-- Les balises META servent à placer des métadonnées (metadata) dans une page HTML. On placera ces informations -- dans l’élément head, et elles ne seront pas affichées sur la page. À qui sont destinées ces informations? Eh bien, à tous les outils susceptibles de les exploiter. Et notamment: aux navigateurs ; aux moteurs de recherche;plus largement, à tous les outils d’indexation, c’est-dire tous les outils qui analysent vos pages pour y identifier diverses informations. 
+https://www.alsacreations.com/article/lire/628-balises-meta.html -->
+
+	<!-- Permet d’avoir une information sur l’encodage des caractères utilisé (non indispensable mais recommandé) -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<!-- Cette META permet de fournir une description courte (deux à trois phrases courtes) de la page web. 
+	Cette description est notamment utilisée (dans certains cas) par les principaux moteurs de recherche, 
+	pour fournir le court texte d’aperçu des pages de résultats, ou bien par les réseaux sociaux (Facebook, Google+) 
+	pour définir le paragraphe de texte associé au lien partagé. -->
+	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
+
+	<!-- Relativement obsolète -->
+	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
+        
+
+<!-- 
+Le lien est un composant essentiel de la structure des documents. Il offre la possibilité de naviguer vers une autre ressources, et de mettre en relation des ressources similaires, complémentaires ou concurrentielles. L'attribut rel placé sur les balises <a>, <area> et <link> définit la nature de la relation établie entre deux ressources.
+La balise LINK permet de lier la feuille de style CSS au document HTML. Le navigateur sait ainsi qu'il s'agit des styles applicables au document et interprète les propriétés CSS contenues dans le fichier lié.
+-->
+
+        <link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.css">
+        <link rel="stylesheet" href="css/eUGsj.all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  
+        <!--[if lte IE 8]>
+		<script src="css/ie/html5shiv.js"></script><![endif]-->
+        
+	<!--[if lt IE 9]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="js/json2.min.js"></script>
+        	<script type="text/javascript">
+            window.__ltie9 = true; </script>
+        <![endif]-->
+        
+<!-- L'élément HTML <script> est utilisé pour intégrer ou faire référence à un script exécutable. 
+Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+        <script src="js/json2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/npm.js"></script>
+                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.15/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+        <script src="js/bar-chart-1a3f0242ee9d13cef39ccd24a306b422.min.js"></script>
+        <script src="js/chart-753c771b6f0ebc215cab76b0fca5e03aab20b743.min.js"></script>
+        <script src="js/default-5baee189e1a2f0bf680f4910cc958098.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+		<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-75276315-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	
+	</head>
+
+    
+	<body>
+    
+	<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html#menu">Menu</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#brand"> Graphiques </a></li>
+						<li><a href="sources.html">Sources</a></li>
+                        <li><a href="about.html">Méthodologie</a></li>
+					</ul>
+				</nav>
+			</header>
+
+	<!-- Main -->
+			<section id="main" class="wrapper style3 align-center">
+				<div class="container">
+					<header class="major">
+						<h2>Méthodologie</h2>
+				    </header>
+                </div>
+                <div>
+                 <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" class="active"><a href="#one"  class = "block" aria-controls="one" role="tab" data-toggle="tab">Consommation hebdomadaire</a></li>
+                </ul>
+                
+
+	<!-- Tab contents -->                
+                    <div class="tab-content">
+                        
+                        <!-- One -->
+                        <div role="tabpanel" class="tab-pane active" id="one">
+			            <section id="one" class="wrapper style3 align-center">
+                            <div class="container">
+                                <header>
+					               <h3>Consommation hebdomadaire des enfants français :</h3>
+                                </header>
+                                <div class="row 200%">
+                                    <section class="4u">
+                                        <img class="image fit" src="images/pic311.jpg" alt="" />
+                                    </section>
+                                    <section class="4u">
+                                        <img class="image fit" src="images/pic312.jpg" alt="" />
+                                    </section>
+                                    <section class="4u">
+                                        <img class="image fit" src="images/pic313.jpg" alt="" />
+                                    </section>
+                                </div>
+                                <div align="justify">
+					           <p>Ces statistiques ont été obtenues à partir des données de sondages issues de la base de données <a class="block" href="sources.html">EFSA</a>. 
+                                Ces données portent sur les habitudes de consommation des français et concernent 
+                                des enfants et adolescents âgés de 3 de à 17 ans. Seuls les biscuits chocolatés, les jus d'orange (jus concentré et jus hors nectars) et les 
+                                yaourts natures ont été considérés. </p></div>
+					           <footer>
+						          <ul class="actions">
+							         <li>
+								            <a href="index.html#intro" class="button alt">Voir le graphique</a>
+							         </li>
+						          </ul>
+					           </footer>
+				             </div>
+			            </section>                            
+                        </div>
+                 
+		
+
+
+	<!-- Pied de page -->
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+				<section class="5u 6u$(medium) 12u$(small)">
+                            		<ul class="tabular">
+						<h3>QUI SOMMES-NOUS ?</h3>
+                            				<h4>Etudiants en dernière année de l'ENSAE ParisTech, nous avons réalisé cette page web dans le cadre du cours de dataviz.</h4>                           
+                            			<h3><a href="sources.html">SOURCES</a></h3>  
+                            			<h3><a href="about.html">METHODOLOGIE</a></h3>  
+					</ul>
+				</section>
+				
+				<section class="5u$ 12u$(medium) 12u$(small)">
+					<h3>NOUS CONTACTER</h3>
+					<ul class="tabular">
+					<li> <h3>Mail</h3>
+							<h4><a href="mailto:ourteamvision@gmail.com">ourteamvision@gmail.com</a></h4> </li>
+                                	<li> <h3><a href="adresse perso linkedin" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="adresse perso linkedin">Nom Prénom</a></h4> </li>
+					<li><h3><a href="adresse perso gmail" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Nom2 Prénom2</a></h4> </li>
+					</ul>
+				</section>
+				</div>
+
+				<ul class="copyright">
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                        		<li>Icons:  <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> </li>
+                     		</ul>
+			</div>
+			</footer>
+
+	</body>
+</html>
