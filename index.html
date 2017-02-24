@@ -12,26 +12,11 @@
 		<meta charset="UTF-8">
 		<title>Quel arrondissement est fait pour toi ?</title>
 
-<!-- Les balises META servent à placer des métadonnées (metadata) dans une page HTML. On placera ces informations -- dans l’élément head, et elles ne seront pas affichées sur la page. À qui sont destinées ces informations? Eh bien, à tous les outils susceptibles de les exploiter. Et notamment: aux navigateurs ; aux moteurs de recherche;plus largement, à tous les outils d’indexation, c’est-dire tous les outils qui analysent vos pages pour y identifier diverses informations. 
-https://www.alsacreations.com/article/lire/628-balises-meta.html -->
-
-	<!-- Permet d’avoir une information sur l’encodage des caractères utilisé (non indispensable mais recommandé) -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	
-	<!-- Cette META permet de fournir une description courte (deux à trois phrases courtes) de la page web. 
-	Cette description est notamment utilisée (dans certains cas) par les principaux moteurs de recherche, 
-	pour fournir le court texte d’aperçu des pages de résultats, ou bien par les réseaux sociaux (Facebook, Google+) 
-	pour définir le paragraphe de texte associé au lien partagé. -->
 	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
-
 	<!-- Relativement obsolète -->
 	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
         
-
-<!-- 
-Le lien est un composant essentiel de la structure des documents. Il offre la possibilité de naviguer vers une autre ressources, et de mettre en relation des ressources similaires, complémentaires ou concurrentielles. L'attribut rel placé sur les balises <a>, <area> et <link> définit la nature de la relation établie entre deux ressources.
-La balise LINK permet de lier la feuille de style CSS au document HTML. Le navigateur sait ainsi qu'il s'agit des styles applicables au document et interprète les propriétés CSS contenues dans le fichier lié.
--->
 
         <link rel="stylesheet" href="css/skel.css" />
 	<link rel="stylesheet" href="css/style.css" />
@@ -53,8 +38,6 @@ La balise LINK permet de lier la feuille de style CSS au document HTML. Le navig
             window.__ltie9 = true; </script>
         <![endif]-->
         
-<!-- L'élément HTML <script> est utilisé pour intégrer ou faire référence à un script exécutable. 
-Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
@@ -82,6 +65,33 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
         </script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	
+
+<!--test-->
+<bold><script language="javascript">
+function calcul()
+{
+   nombreDeQuestion=10;
+   nom=new Array();
+   nomLength=new Array();
+   point=0;
+   for(n=0;n<=(nombreDeQuestion-1);n++)
+   {
+      nom[n]=document.getElementsByName("choix_rep_"+n);
+      nomLength[n]=nom[n].length;
+      for(q=0;q<=(nomLength[n]-1);q++)
+      {
+        if(nom[n][q].checked==true)
+        {point=point+eval(nom[n][q].value);} 
+        else
+        {point=point;}
+
+      }       
+   }
+   document.form_qz.txtNb.value=point;
+}
+</script></bold>
+<!--fin test-->
+
 	</head>
 
 
@@ -165,12 +175,17 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
 </li> </ul>
 </section>
 
+
+
+
+
+
 <!-- Fin test -->
 
 
 <!--
 <div class="question">
-<form name="quest" method="post" enctype="text/plain">			
+<form name="quest" method="post" enctype="text/plain" id="testQuiz">			
    <p>
        Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
        <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
@@ -182,6 +197,8 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
 <input type="reset" value="Effacer">
 </form>
 </div>
+
+
 -->
 
 
