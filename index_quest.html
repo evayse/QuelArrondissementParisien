@@ -429,9 +429,13 @@ function calcul()
 		}
 		function affichageReponse(nQ,answer){
 			result[nQ-1]=answer;
+			function getMaxOfArray(numArray) {
+  				return Math.max.apply(null, numArray);
+			}
+			var toto = getMaxOfArray(result);
 			document.querySelector('#quiz').style.display='none';
 			document.querySelector('#reponse').style.display='block';
-			document.getElementById("selectArrondissement").innerHTML = 'Pour briller en société, vis dans le '+result+'ème';
+			document.getElementById("selectArrondissement").innerHTML = 'Pour briller en société, vis dans le '+ toto +'ème';
 			$('#selectArrondissement').css('font-weight', 'bold');
 		}
 	
