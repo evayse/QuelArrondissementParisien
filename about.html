@@ -12,27 +12,10 @@
 		<meta charset="UTF-8">
 		<title>Quel arrondissement est fait pour toi ?</title>
 		
-<!-- Les balises META servent à placer des métadonnées (metadata) dans une page HTML. On placera ces informations -- dans l’élément head, et elles ne seront pas affichées sur la page. À qui sont destinées ces informations? Eh bien, à tous les outils susceptibles de les exploiter. Et notamment: aux navigateurs ; aux moteurs de recherche;plus largement, à tous les outils d’indexation, c’est-dire tous les outils qui analysent vos pages pour y identifier diverses informations. 
-https://www.alsacreations.com/article/lire/628-balises-meta.html -->
-
-	<!-- Permet d’avoir une information sur l’encodage des caractères utilisé (non indispensable mais recommandé) -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	
-	<!-- Cette META permet de fournir une description courte (deux à trois phrases courtes) de la page web. 
-	Cette description est notamment utilisée (dans certains cas) par les principaux moteurs de recherche, 
-	pour fournir le court texte d’aperçu des pages de résultats, ou bien par les réseaux sociaux (Facebook, Google+) 
-	pour définir le paragraphe de texte associé au lien partagé. -->
 	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
-
-	<!-- Relativement obsolète -->
 	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
         
-
-<!-- 
-Le lien est un composant essentiel de la structure des documents. Il offre la possibilité de naviguer vers une autre ressources, et de mettre en relation des ressources similaires, complémentaires ou concurrentielles. L'attribut rel placé sur les balises <a>, <area> et <link> définit la nature de la relation établie entre deux ressources.
-La balise LINK permet de lier la feuille de style CSS au document HTML. Le navigateur sait ainsi qu'il s'agit des styles applicables au document et interprète les propriétés CSS contenues dans le fichier lié.
--->
-
         <link rel="stylesheet" href="css/skel.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/style-xlarge.css" />
@@ -53,8 +36,6 @@ La balise LINK permet de lier la feuille de style CSS au document HTML. Le navig
             window.__ltie9 = true; </script>
         <![endif]-->
         
-<!-- L'élément HTML <script> est utilisé pour intégrer ou faire référence à un script exécutable. 
-Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement avant que le navigateur continue l'analyse de la page.-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
@@ -93,9 +74,8 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Accueil</a></li>
-                        <li><a href="index.html#brand"> Graphiques </a></li>
 						<li><a href="sources.html">Sources</a></li>
-                        <li><a href="about.html">Méthodologie</a></li>
+			                        <li><a href="about.html">Méthodologie</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -106,50 +86,27 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
 					<header class="major">
 						<h2>Méthodologie</h2>
 				    </header>
-                </div>
-                <div>
-                 <ul class="nav nav-pills nav-justified">
-                    <li role="presentation" class="active"><a href="#one"  class = "block" aria-controls="one" role="tab" data-toggle="tab">Consommation hebdomadaire</a></li>
-                </ul>
-                
+                		</div>
+                        </section>
 
 	<!-- Tab contents -->                
-                    <div class="tab-content">
+                    		<div class="tab-content">
                         
-                        <!-- One -->
-                        <div role="tabpanel" class="tab-pane active" id="one">
-			            <section id="one" class="wrapper style3 align-center">
-                            <div class="container">
-                                <header>
-					               <h3>Consommation hebdomadaire des enfants français :</h3>
-                                </header>
-                                <div class="row 200%">
-                                    <section class="4u">
-                                        <img class="image fit" src="images/pic311.jpg" alt="" />
-                                    </section>
-                                    <section class="4u">
-                                        <img class="image fit" src="images/pic312.jpg" alt="" />
-                                    </section>
-                                    <section class="4u">
-                                        <img class="image fit" src="images/pic313.jpg" alt="" />
-                                    </section>
-                                </div>
-                                <div align="justify">
-					           <p>Ces statistiques ont été obtenues à partir des données de sondages issues de la base de données <a class="block" href="sources.html">EFSA</a>. 
-                                Ces données portent sur les habitudes de consommation des français et concernent 
-                                des enfants et adolescents âgés de 3 de à 17 ans. Seuls les biscuits chocolatés, les jus d'orange (jus concentré et jus hors nectars) et les 
-                                yaourts natures ont été considérés. </p></div>
-					           <footer>
-						          <ul class="actions">
-							         <li>
-								            <a href="index.html#intro" class="button alt">Voir le graphique</a>
-							         </li>
-						          </ul>
-					           </footer>
-				             </div>
-			            </section>                            
-                        </div>
-                 
+                        	<!-- One -->
+                        		<div role="tabpanel" class="tab-pane active" id="one">
+			            		<section id="one" class="wrapper style3 align-center">
+                            				<div class="container">
+				                                <header><h3>Comparaison des arrondissements parisiens</h3></header>
+                               
+                               					<div align="justify">
+									<p>Ces statistiques ont été obtenues à partir des données Sirene, disponibles sur le site <a class="block" href="https://www.sirene.fr/sirene/public/static/acces-donnees"></a>. 
+									 </p>
+								</div>
+	
+							</div>
+						</section>                            
+		                        </div>
+                		<div> 
 		
 
 
@@ -173,8 +130,16 @@ Les scripts sans attribut async ou defer sont chargés et exécutés immédiatement 
 							<h4><a href="mailto:ourteamvision@gmail.com">ourteamvision@gmail.com</a></h4> </li>
                                 	<li> <h3><a href="adresse perso linkedin" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="adresse perso linkedin">Nom Prénom</a></h4> </li>
-					<li><h3><a href="adresse perso gmail" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
-                                			<h4><a href="adresse perso gmail">Nom2 Prénom2</a></h4> </li>
+					<li><h3><a href="fabien.agnus@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">AGNUS Fabien</a></h4> </li>
+					<li><h3><a href="julie.djiriguian@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">DJIRIGUIAN Julie</a></h4> </li>
+					<li><h3><a href="noemie.haouzi@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Haouzi Noémie</a></h4> </li>
+					<li><h3><a href="eva.hoyau@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">HOYAU Eva</a></h4> </li>
+					<li><h3><a href="gaetan.polard@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">POLARD Gaetan</a></h4> </li>
 					</ul>
 				</section>
 				</div>
