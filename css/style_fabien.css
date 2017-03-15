@@ -8,8 +8,8 @@ div.tab {
 /* Style the links inside the tab */
 div.tab a {
     float: left;
-    display: block;
-    color: black;
+/*    display: block;
+*/    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
