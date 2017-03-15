@@ -420,7 +420,7 @@ height:200px;">
 						<div class="col-lg-4"><img class="imagecenter" src="images/coupe.jpg" height="200px" width="200px" alt="" /></div>
         					<div class="col-lg-4" style="top:40px;
 "><h3 id="selectArrondissement" style="font-size: 30pt;"> </h3></div>
-        					   <div class="tab">
+        					   <div id= graph class="tab">
   <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'T-Rex')">T-Rex</a>
   <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">R&eacute;ponse 2</a>
   <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">R&eacute;ponse 3</a>
@@ -524,7 +524,8 @@ height:200px;">
 			result[nQ-1]=answer;
 			document.querySelector('#quiz').style.display='none';
 			document.querySelector('#reponse').style.display='block';
-			document.querySelector('#comparaisonArrondissements').style.display='block';			
+			document.querySelector('#comparaisonArrondissements').style.display='block';	
+
 
 if (result[0] == 1 && result[1]==1 && result[2]==1 && result[3]==1 && result[4]==1){var arrondissement=20;
 } else if (result[0] == 2 && result[1]==1 && result[2]==1 && result[3]==1 && result[4]==1){var arrondissement=9;
@@ -1554,7 +1555,7 @@ if (result[0] == 1 && result[1]==1 && result[2]==1 && result[3]==1 && result[4]=
 			document.getElementById("selectArrondissement").innerHTML = 'Enjoy your life, vis dans le '+arrondissement+'ème';
 			$('#selectArrondissement').css('font-weight', 'bold');
 		}
-	
+	print(result)
 	</script>
 
 
