@@ -9,7 +9,9 @@
 
 <!-- PARTIE HEAD -->
 	<head>
-		<meta charset="UTF-8">
+		<!-- <meta charset="UTF-8"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
 		<title>Quel arrondissement est fait pour toi ?</title>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -336,6 +338,10 @@ function calcul()
         					<div class="col-lg-2"></div>
 						<div class="col-lg-4"><img class="imagecenter" src="images/coupe.jpg" height="200px" width="200px" alt="" /></div>
         					<div class="col-lg-4"><h3 id="selectArrondissement"> </h3></div>
+        					<div>
+        					<iframe width="800" height="450" src="https://embed.chartblocks.com/1.0/?c=58c819949973d2cd77399d3d&t=96dc137639bf55d" frameBorder="0"></iframe>
+        					</div>
+        						</script>	
 						<div class="col-lg-2"></div>
 					</div>
 				</div>
@@ -432,10 +438,10 @@ function calcul()
 			function getMaxOfArray(numArray) {
   				return Math.max.apply(null, numArray);
 			}
-			var toto = getMaxOfArray(result);
+			var maxResult = getMaxOfArray(result);
 			document.querySelector('#quiz').style.display='none';
 			document.querySelector('#reponse').style.display='block';
-			document.getElementById("selectArrondissement").innerHTML = 'Pour briller en société, vis dans le '+ toto +'ème';
+			document.getElementById("selectArrondissement").innerHTML = 'Pour briller en société, vis dans le '+ maxResult +'ème';
 			$('#selectArrondissement').css('font-weight', 'bold');
 		}
 	
